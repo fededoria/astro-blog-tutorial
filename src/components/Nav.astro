@@ -1,0 +1,33 @@
+---
+const headerLogo = "✅";
+
+const navLinks = [
+    { href: "#home", label: "Home" },
+    { href: "#about-us", label: "About Us" },
+    { href: "#products", label: "Products" },
+    { href: "#contact-us", label: "Contact US" },
+];
+---
+
+<header class="p-1 py-8 absolute z-10 w-full border-2">
+    <nav class="flex justify-between items-center m-0 mw-[1440px]">
+        <a href="/">{headerLogo}</a>
+        <ul
+            class="flex-1 flex justify-center items-center gap-16 max-lg:hidden"
+        >
+            {
+                navLinks.map((item) => (
+                    <a key={item.label}>
+                        <a
+                            class="text-slate-500 text-lg hover:text-slate-800"
+                            href={item.href}
+                        >
+                            {item.label}
+                        </a>
+                    </a>
+                ))
+            }
+        </ul>
+        <div class="hidden max-[1440px]:block">🟰</div>
+    </nav>
+</header>

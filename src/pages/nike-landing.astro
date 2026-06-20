@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+
+import CustomerReviews from "../components/CustomerReviews.astro";
+import Nav from "../components/Nav.astro";
+
+const { title = "Nike landing page" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <title>{title}</title>
+    </head>
+    <body>
+        <main class="relative">
+            <Nav />
+            <section>Hero</section>
+
+            <section class="sm:px-16 px-8 sm:py-24 py-12">
+                PopularProducts
+            </section>
+            <section class="sm:px-16 px-8 sm:py-24 py-12">SuperQuality</section>
+            <section class="sm:px-16 px-8 sm:py-24 py-12">Services</section>
+            <section class="sm:px-16 px-8 sm:py-24 py-10">
+                SpecialOffers
+            </section>
+            <section class="sm:px-16 px-8 sm:py-24 py-10 bg-blue-50">
+                <CustomerReviews />
+            </section>
+            <section class="sm:px-16 px-8 sm:py-24 py-10 w-full">
+                Subscribe
+            </section>
+            <section class="sm:px-16 px-8 sm:py-24 py-10 bg-black pb-8">
+                Footer
+            </section>
+            <div class="bg-blue-950 p-2 text-white">
+                <h1 class="flex text-center text-3xl font-bold underline">
+                    {title}
+                </h1>
+            </div>
+        </main>
+    </body>
+</html>
