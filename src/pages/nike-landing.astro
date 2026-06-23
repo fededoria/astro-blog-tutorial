@@ -43,6 +43,142 @@ const { title = "Nike landing page" } = Astro.props;
                     {title}
                 </h1>
             </div>
+            <section class="m-4 flex justify-center">
+                <div
+                    class="relative rounded-2xl overflow-hidden w-96 h-64 bg-[url('https://instagram.ffdo1-1.fna.fbcdn.net/v/t51.82787-15/708909958_18595260664003986_5539243430380853379_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=MzkwODcwNjk4NDYxNTY2ODA4OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA3OS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=SGPQt2dzpiIQ7kNvwFI_c8Q&_nc_oc=AdqJGUjfIhI7e2Zp64Hk4O12MMDpW6sXpIDHKk4x1yCNJkc2vlW0Pv7kZk08ReIhEv76QXSyIoVpOVw0O8iWgLsk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ffdo1-1.fna&_nc_gid=DFJ4W2SizjSIhqHaTHW9aw&_nc_ss=7a22e&oh=00_Af-XbDEDe3xdod5pM_lsnwY0GYbckEvmEDel53ygGeh4Og&oe=6A3CDE0D')] bg-cover bg-center"
+                >
+                    <!-- Overlay oscuro -->
+                    <div class="absolute inset-0 bg-black/50"></div>
+
+                    <!-- Contenido -->
+                    <div
+                        class="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-6"
+                    >
+                        <h2 class="text-2xl font-bold mb-2">Título del Card</h2>
+                        <p class="mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Voluptatibus quia, nulla! Maiores et
+                            perferendis eaque, exercitationem praesentium nihil.
+                        </p>
+                        <button
+                            class="bg-blue-500 hover:bg-blue-400 text-white font-semi-bold py-2 px-4 rounded-xl"
+                        >
+                            Abrir modal</button
+                        >
+                    </div>
+                </div>
+            </section>
+            <!-- PRACTICA DE MEDIA QUERIE -->
+            <section class="bg-gray-900 px-8 py-16 flex justify-center">
+                <div
+                    class="text-white flex flex-col items-center md:items-start space-y-4 text-center md:text-left bg-gray-950 px-8 py-4 rounded-md w-96 md:w-auto overflow-auto"
+                >
+                    <h2 class="text-2xl md:text-4xl font-extrabold font-sans">
+                        Media Queries
+                    </h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Delectus debitis est vero, maxime dolore
+                        repudiandae qui cumque iste commodi molestiae a. Alias,
+                        optio inventore. Ad nam est cum ab necessitatibus.
+                    </p>
+
+                    <a href="/" target="_blank" class="tjb-button"
+                        >Volver a inicio</a
+                    >
+                </div>
+            </section>
+            <!-- NUEVA -->
+            <section>
+                <div class="flex justify-center space-x-8 bg-gray-600 p-8">
+                    <div
+                        class="bg-amber-50 flex-col justify-center items-center w-96 px-6 py-8 space-y-2 shadow-[8px_8px_0_#111111]"
+                    >
+                        <div class="flex justify-between items-baseline">
+                            <h2 class="font-black text-4xl">Producto 1</h2>
+                            <p
+                                class="text-amber-700 font-mono font-bold text-xl"
+                            >
+                                /01
+                            </p>
+                        </div>
+                        <h3 class="text-amber-800 font-[Helvetica] italic">
+                            Aprobado
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Inventore quis qui debitis incidunt mollitia
+                            nihil voluptatibus facilis porro, ab error, in modi
+                            repellat adipisci sed sit. Possimus temporibus neque
+                            dicta!
+                        </p>
+
+                        <!-- BOTÓN + SOMBRA SÓLIDA -->
+                        <div
+                            class="bg-sky-300/50 flex items-center justify-start py-2"
+                        >
+                            <a
+                                href="/"
+                                target="_blank"
+                                class="relative bg-black text-white font-semibold uppercase text-sm pl-4 pr-8 py-2
+           shadow-[4px_4px_0_#d97706]"
+                            >
+                                Ver más
+                            </a>
+                        </div>
+
+                        <!-- CIERRA BOTÓN + SOMBRA SÓLIDA -->
+                    </div>
+                    <div
+                        class="bg-gray-900 text-sky-50 flex-col justify-center items-center w-96 px-6 py-8 space-y-2 rounded-4xl"
+                    >
+                        <h2 class="font-black text-4xl">Producto 2</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Inventore quis qui debitis incidunt mollitia
+                            nihil voluptatibus facilis porro, ab error, in modi
+                            repellat adipisci sed sit. Possimus temporibus neque
+                            dicta!
+                        </p>
+                        <a
+                            href="/"
+                            target="_blank"
+                            class="bg-cyan-500 font-bold font-mono text-sm px-4 py-2 rounded-2xl shadow-lg shadow-cyan-500/30"
+                            >Ver más</a
+                        >
+                    </div>
+
+                    <!-- SOMBRA CON PATRON -->
+                    <div
+                        class="bg-amber-50 flex-col justify-center items-center w-96 px-4 py-8 space-y-2"
+                    >
+                        <div class="relative w-64 h-40">
+                            <!-- pseudo-element con patrón -->
+                            <div
+                                class="absolute -right-2 -bottom-2 w-full h-full
+           bg-[repeating-linear-gradient(45deg,#d97706_0px,#d97706_2px,transparent_2px,transparent_6px)]"
+                            >
+                            </div>
+
+                            <!-- tarjeta principal -->
+                            <div class="relative bg-black text-white p-6">
+                                <h2 class="text-lg font-bold mb-2">Título</h2>
+                                <p class="text-sm mb-4">
+                                    Contenido de la tarjeta
+                                </p>
+                                <a
+                                    href="/"
+                                    target="_blank"
+                                    class="font-semibold uppercase text-sm"
+                                >
+                                    Ver más
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CIERRA SOMBRA CON PATRÓN -->
+                </div>
+            </section>
         </main>
     </body>
 </html>

@@ -3,3 +3,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@theme {
+    --color-electric-moss: #b0d80a;
+}
+
+@layer components {
+    .tjb-button {
+        @apply bg-electric-moss hover:bg-electric-moss/70 text-black font-semibold px-4 py-2 rounded-lg;
+    }
+}
+
+/* 
+
+a[target="_blank"]::after {
+    content: '↗';
+}
+
+*/
+
+/* USANDO LUCIDE ICONS
+
+a[target="_blank"]::after {
+    content: "";
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: 0.25em;
+    background-color: currentColor;
+    -webkit-mask: url('/icons/lucide-arrow-up-right.svg') no-repeat center;
+    mask: url('/icons/lucide-arrow-up-right.svg') no-repeat center;
+}
+
+FIN */
+
+a[target="_blank"]::after {
+    content: "↗";
+    margin-left: 0.5em;
+    font-variant-emoji: text;
+}
