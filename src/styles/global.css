@@ -38,7 +38,7 @@ a[target="_blank"]::after {
 FIN */
 
 a[target="_blank"]::after {
-    content: "↗";
+    content: "\2197";
     margin-left: 0.5em;
     font-variant-emoji: text;
 }

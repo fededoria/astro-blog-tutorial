@@ -20,164 +20,445 @@ const { title = "Nike landing page" } = Astro.props;
         <main class="relative">
             <Nav />
             <section>Hero</section>
-
-            <section class="sm:px-16 px-8 sm:py-24 py-12">
-                PopularProducts
-            </section>
-            <section class="sm:px-16 px-8 sm:py-24 py-12">SuperQuality</section>
-            <section class="sm:px-16 px-8 sm:py-24 py-12">Services</section>
-            <section class="sm:px-16 px-8 sm:py-24 py-10">
-                SpecialOffers
-            </section>
             <section class="sm:px-16 px-8 sm:py-24 py-10 bg-blue-50">
-                <CustomerReviews />
-            </section>
-            <section class="sm:px-16 px-8 sm:py-24 py-10 w-full">
-                Subscribe
-            </section>
-            <section class="sm:px-16 px-8 sm:py-24 py-10 bg-black pb-8">
-                Footer
-            </section>
-            <div class="bg-blue-950 p-2 text-white">
-                <h1 class="flex text-center text-3xl font-bold underline">
-                    {title}
-                </h1>
-            </div>
-            <section class="m-4 flex justify-center">
-                <div
-                    class="relative rounded-2xl overflow-hidden w-96 h-64 bg-[url('https://instagram.ffdo1-1.fna.fbcdn.net/v/t51.82787-15/708909958_18595260664003986_5539243430380853379_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=MzkwODcwNjk4NDYxNTY2ODA4OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA3OS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=SGPQt2dzpiIQ7kNvwFI_c8Q&_nc_oc=AdqJGUjfIhI7e2Zp64Hk4O12MMDpW6sXpIDHKk4x1yCNJkc2vlW0Pv7kZk08ReIhEv76QXSyIoVpOVw0O8iWgLsk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ffdo1-1.fna&_nc_gid=DFJ4W2SizjSIhqHaTHW9aw&_nc_ss=7a22e&oh=00_Af-XbDEDe3xdod5pM_lsnwY0GYbckEvmEDel53ygGeh4Og&oe=6A3CDE0D')] bg-cover bg-center"
-                >
-                    <!-- Overlay oscuro -->
-                    <div class="absolute inset-0 bg-black/50"></div>
-
-                    <!-- Contenido -->
-                    <div
-                        class="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-6"
-                    >
-                        <h2 class="text-2xl font-bold mb-2">Título del Card</h2>
-                        <p class="mb-4">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Voluptatibus quia, nulla! Maiores et
-                            perferendis eaque, exercitationem praesentium nihil.
-                        </p>
-                        <button
-                            class="bg-blue-500 hover:bg-blue-400 text-white font-semi-bold py-2 px-4 rounded-xl"
-                        >
-                            Abrir modal</button
-                        >
-                    </div>
+                <section class="sm:px-16 px-8 sm:py-24 py-10 bg-black pb-8">
+                    Footer
+                </section>
+                <div class="bg-blue-950 p-2 text-white">
+                    <h1 class="flex text-center text-3xl font-bold underline">
+                        {title}
+                    </h1>
                 </div>
-            </section>
-            <!-- PRACTICA DE MEDIA QUERIE -->
-            <section class="bg-gray-900 px-8 py-16 flex justify-center">
-                <div
-                    class="text-white flex flex-col items-center md:items-start space-y-4 text-center md:text-left bg-gray-950 px-8 py-4 rounded-md w-96 md:w-auto overflow-auto"
-                >
-                    <h2 class="text-2xl md:text-4xl font-extrabold font-sans">
-                        Media Queries
-                    </h2>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Delectus debitis est vero, maxime dolore
-                        repudiandae qui cumque iste commodi molestiae a. Alias,
-                        optio inventore. Ad nam est cum ab necessitatibus.
-                    </p>
-
-                    <a href="/" target="_blank" class="tjb-button"
-                        >Volver a inicio</a
-                    >
-                </div>
-            </section>
-            <!-- NUEVA -->
-            <section>
-                <div class="flex justify-center space-x-8 bg-gray-600 p-8">
+                <!-- CARD CON FOTO DE fondo -->
+                <section class="m-4 flex justify-center">
                     <div
-                        class="bg-amber-50 flex-col justify-center items-center w-96 px-6 py-8 space-y-2 shadow-[8px_8px_0_#111111]"
+                        class="relative rounded-2xl overflow-hidden w-96 h-64 bg-[url('https://instagram.ffdo1-1.fna.fbcdn.net/v/t51.82787-15/708909958_18595260664003986_5539243430380853379_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=MzkwODcwNjk4NDYxNTY2ODA4OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA3OS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=SGPQt2dzpiIQ7kNvwFI_c8Q&_nc_oc=AdqJGUjfIhI7e2Zp64Hk4O12MMDpW6sXpIDHKk4x1yCNJkc2vlW0Pv7kZk08ReIhEv76QXSyIoVpOVw0O8iWgLsk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ffdo1-1.fna&_nc_gid=DFJ4W2SizjSIhqHaTHW9aw&_nc_ss=7a22e&oh=00_Af-XbDEDe3xdod5pM_lsnwY0GYbckEvmEDel53ygGeh4Og&oe=6A3CDE0D')] bg-cover bg-center"
                     >
-                        <div class="flex justify-between items-baseline">
-                            <h2 class="font-black text-4xl">Producto 1</h2>
-                            <p
-                                class="text-amber-700 font-mono font-bold text-xl"
-                            >
-                                /01
-                            </p>
-                        </div>
-                        <h3 class="text-amber-800 font-[Helvetica] italic">
-                            Aprobado
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Inventore quis qui debitis incidunt mollitia
-                            nihil voluptatibus facilis porro, ab error, in modi
-                            repellat adipisci sed sit. Possimus temporibus neque
-                            dicta!
-                        </p>
+                        <!-- Overlay oscuro -->
+                        <div class="absolute inset-0 bg-black/50"></div>
 
-                        <!-- BOTÓN + SOMBRA SÓLIDA -->
+                        <!-- Contenido -->
                         <div
-                            class="bg-sky-300/50 flex items-center justify-start py-2"
+                            class="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-6"
                         >
-                            <a
-                                href="/"
-                                target="_blank"
-                                class="relative bg-black text-white font-semibold uppercase text-sm pl-4 pr-8 py-2
-           shadow-[4px_4px_0_#d97706]"
+                            <h2 class="text-2xl font-bold mb-2">
+                                Título del Card
+                            </h2>
+                            <p class="mb-4">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Voluptatibus quia, nulla!
+                                Maiores et perferendis eaque, exercitationem
+                                praesentium nihil.
+                            </p>
+                            <button
+                                class="bg-blue-500 hover:bg-blue-400 text-white font-semi-bold py-2 px-4 rounded-xl"
                             >
-                                Ver más
-                            </a>
+                                Abrir modal</button
+                            >
                         </div>
-
-                        <!-- CIERRA BOTÓN + SOMBRA SÓLIDA -->
                     </div>
+                </section>
+                <!-- PRACTICA DE MEDIA QUERIE -->
+                <section class="bg-gray-900 px-8 py-16 flex justify-center">
                     <div
-                        class="bg-gray-900 text-sky-50 flex-col justify-center items-center w-96 px-6 py-8 space-y-2 rounded-4xl"
+                        class="text-white flex flex-col items-center md:items-start space-y-4 text-center md:text-left bg-gray-950 px-8 py-4 rounded-md w-96 md:w-auto overflow-auto"
                     >
-                        <h2 class="font-black text-4xl">Producto 2</h2>
+                        <h2
+                            class="text-2xl md:text-4xl font-extrabold font-sans"
+                        >
+                            Media Queries
+                        </h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Inventore quis qui debitis incidunt mollitia
-                            nihil voluptatibus facilis porro, ab error, in modi
-                            repellat adipisci sed sit. Possimus temporibus neque
-                            dicta!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Delectus debitis est vero, maxime dolore
+                            repudiandae qui cumque iste commodi molestiae a.
+                            Alias, optio inventore. Ad nam est cum ab
+                            necessitatibus.
                         </p>
-                        <a
-                            href="/"
-                            target="_blank"
-                            class="bg-cyan-500 font-bold font-mono text-sm px-4 py-2 rounded-2xl shadow-lg shadow-cyan-500/30"
-                            >Ver más</a
+
+                        <a href="/" target="_blank" class="tjb-button"
+                            >Volver a inicio</a
                         >
                     </div>
-
-                    <!-- SOMBRA CON PATRON -->
-                    <div
-                        class="bg-amber-50 flex-col justify-center items-center w-96 px-4 py-8 space-y-2"
-                    >
-                        <div class="relative w-64 h-40">
-                            <!-- pseudo-element con patrón -->
-                            <div
-                                class="absolute -right-2 -bottom-2 w-full h-full
-           bg-[repeating-linear-gradient(45deg,#d97706_0px,#d97706_2px,transparent_2px,transparent_6px)]"
-                            >
-                            </div>
-
-                            <!-- tarjeta principal -->
-                            <div class="relative bg-black text-white p-6">
-                                <h2 class="text-lg font-bold mb-2">Título</h2>
-                                <p class="text-sm mb-4">
-                                    Contenido de la tarjeta
+                </section>
+                <!-- NUEVA -->
+                <section>
+                    <div class="flex justify-center space-x-8 bg-gray-600 p-8">
+                        <div
+                            class="bg-amber-50 flex-col justify-center items-center w-96 px-6 py-8 space-y-2 shadow-[8px_8px_0_#111111]"
+                        >
+                            <div class="flex justify-between items-baseline">
+                                <h2 class="font-black text-4xl">Producto 1</h2>
+                                <p
+                                    class="text-amber-700 font-mono font-bold text-xl"
+                                >
+                                    /01
                                 </p>
+                            </div>
+                            <h3 class="text-amber-800 font-[Helvetica] italic">
+                                Aprobado
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Inventore quis qui debitis
+                                incidunt mollitia nihil voluptatibus facilis
+                                porro, ab error, in modi repellat adipisci sed
+                                sit. Possimus temporibus neque dicta!
+                            </p>
+
+                            <!-- BOTÓN + SOMBRA SÓLIDA -->
+                            <div
+                                class="bg-sky-300/50 flex items-center justify-start py-2"
+                            >
                                 <a
                                     href="/"
                                     target="_blank"
-                                    class="font-semibold uppercase text-sm"
+                                    class="relative bg-black text-white font-semibold uppercase text-sm pl-4 pr-8 py-2
+           shadow-[4px_4px_0_#d97706]"
                                 >
                                     Ver más
                                 </a>
                             </div>
+
+                            <!-- CIERRA BOTÓN + SOMBRA SÓLIDA -->
+                        </div>
+                        <div
+                            class="bg-gray-900 text-sky-50 flex-col justify-center items-center w-96 px-6 py-8 space-y-2 rounded-4xl"
+                        >
+                            <h2 class="font-black text-4xl">Producto 2</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Inventore quis qui debitis
+                                incidunt mollitia nihil voluptatibus facilis
+                                porro, ab error, in modi repellat adipisci sed
+                                sit. Possimus temporibus neque dicta!
+                            </p>
+                            <a
+                                href="/"
+                                target="_blank"
+                                class="bg-cyan-500 font-bold font-mono text-sm px-4 py-2 rounded-2xl shadow-lg shadow-cyan-500/30"
+                                >Ver más</a
+                            >
+                        </div>
+
+                        <!-- SOMBRA CON PATRON -->
+                        <div
+                            class="bg-amber-50 flex-col justify-center items-center w-96 px-4 py-8 space-y-2"
+                        >
+                            <div class="relative w-64 h-40">
+                                <!-- pseudo-element con patrón -->
+                                <div
+                                    class="absolute -right-2 -bottom-2 w-full h-full
+           bg-[repeating-linear-gradient(45deg,#d97706_0px,#d97706_2px,transparent_2px,transparent_6px)]"
+                                >
+                                </div>
+
+                                <!-- tarjeta principal -->
+                                <div class="relative bg-black text-white p-6">
+                                    <h2 class="text-lg font-bold mb-2">
+                                        Título
+                                    </h2>
+                                    <p class="text-sm mb-4">
+                                        Contenido de la tarjeta
+                                    </p>
+                                    <a
+                                        href="/"
+                                        target="_blank"
+                                        class="font-semibold uppercase text-sm"
+                                    >
+                                        Ver más
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CIERRA SOMBRA CON PATRÓN -->
+                    </div>
+                </section>
+                <!-- COMPONENTES PINES UI -->
+                <section
+                    class="bg-emerald-700 flex flex-col justify-center items-center space-y-4 px-4 py-8"
+                >
+                    <h2 class="text-4xl font-extrabold uppercase text-center">
+                        Componente Card de Pines UI
+                    </h2>
+                    <div
+                        class="max-w-sm bg-neutral-950 border rounded-lg shadow-sm p-7 border-neutral-200/60"
+                    >
+                        <a href="#_" class="block mb-3">
+                            <h5
+                                class="text-xl font-bold leading-none tracking-tight text-white"
+                            >
+                                Card Title
+                            </h5>
+                        </a>
+                        <p class="mb-4 text-neutral-500">
+                            Here are the biggest enterprise technology
+                            acquisitions of 2021 so far, in reverse
+                            chronological order.
+                        </p>
+                        <button
+                            class="inline-flex items-center justify-between w-auto h-10 px-4 py-2 text-sm font-medium text-black transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none bg-lime-400 hover:bg-lime-400/90 shadow-lg shadow-lime-400/30"
+                        >
+                            <span>Card Button</span>
+                            <svg
+                                class="w-4 h-4 ml-2 -mr-1"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                                ><path
+                                    fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path></svg
+                            >
+                        </button>
+                    </div>
+                </section>
+                <!-- CIERRE COMPONENTE PINES UI -->
+                <!-- CARD CON IMAGEN 🌲 PINES UI -->
+                <section class="bg-red-100 flex justify-center px-4 py-8">
+                    <div
+                        class="rounded-lg overflow-hidden border border-neutral-200/60 bg-white text-neutral-700 shadow-sm w-[380px]"
+                    >
+                        <div class="relative">
+                            <img
+                                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
+                                class="w-full h-auto"
+                                alt="Nike sneaker"
+                            />
+                        </div>
+                        <div class="p-7">
+                            <h2
+                                class="mb-2 text-lg font-bold leading-none tracking-tight"
+                            >
+                                Product Name
+                            </h2>
+                            <p class="mb-5 text-neutral-500">
+                                This card element can be used to display a
+                                product, post, or any other type of data.
+                            </p>
+                            <a
+                                href="/"
+                                target="_blank"
+                                class="inline-flex items-center justify-center w-full h-10 px-4 py-2 text-sm font-medium text-white transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none bg-neutral-950 hover:bg-neutral-950/90"
+                                >View Product</a
+                            >
                         </div>
                     </div>
-                    <!-- CIERRA SOMBRA CON PATRÓN -->
+                </section>
+                <!-- CIERRE CARD CON IMAGEN 🌲 PINES UI -->
+                <div class="flex flex-col gap-3 justify-between">
+                    <div class="p-5 sm:p-10 flex flex-col gap-3">
+                        <h5 class="text-balance sm:text-pretty text-white">
+                            Instant Server Start
+                        </h5>
+                        <p class="sm:max-w-[28rem] text-pretty">
+                            " On demand source file serving over native ESM,
+                            with blazing gfast dependency pre-bundling. "
+                        </p>
+                    </div>
+                    <div class="relative p-10 flex justify-center bg-[#370a7f]">
+                        <img
+                            class="absolute inset-0 h-full w-full object-cover"
+                            src="https://vite.dev/assets/vite-featurepanel-1-background.BHnDg8j4.jpg"
+                            alt="fondo de Vite"
+                            loading="lazy"
+                        />
+                        <img
+                            class="z-1"
+                            src="https://vite.dev/assets/vite-featurepanel-1-terminal.CQVUoUSU.svg"
+                            width="493"
+                            height="230"
+                            alt="Terminal"
+                            loading="lazy"
+                        />
+                    </div>
                 </div>
+                <!-- GRID BACKGROUND -->
+                <section
+                    id="ai-tools"
+                    class="relative overflow-hidden bg-emerald-900 dark:bg-emerald-950"
+                >
+                    <!-- Decorative background elements -->
+                    <div class="absolute inset-0">
+                        <div
+                            class="absolute -top-24 -left-24 h-96 w-96 rounded-full bg-emerald-500/35 blur-3xl"
+                        >
+                        </div>
+                        <div
+                            class="absolute -bottom-24 -right-24 h-96 w-96 rounded-full bg-emerald-800/35 blur-3xl"
+                        >
+                        </div>
+                        <svg
+                            class="absolute inset-0 h-full w-full opacity-[0.1]"
+                            xmlns="http://www.w3.org/2000/svg"
+                            ><defs
+                                ><pattern
+                                    id="grid"
+                                    width="40"
+                                    height="40"
+                                    patternUnits="userSpaceOnUse"
+                                    ><path
+                                        d="M 40 0 L 0 0 0 40"
+                                        fill="none"
+                                        stroke="white"
+                                        stroke-width="0.6"></path></pattern
+                                ></defs
+                            ><rect width="100%" height="100%" fill="url(#grid)"
+                            ></rect></svg
+                        >
+                    </div>
+
+                    <div
+                        class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 text-center"
+                    >
+                        <p
+                            class="text-sm font-semibold uppercase tracking-widest text-emerald-200"
+                        >
+                            Is Your App AI Ready?
+                        </p>
+
+                        <h2
+                            class="mt-3 text-4xl/[48px] sm:text-5xl/[58px] lg:text-6xl/[68px] font-bold font-serif text-white drop-shadow-sm"
+                        >
+                            Don't Vibe Code Alone
+                        </h2>
+
+                        <p
+                            class="mt-6 text-lg sm:text-xl text-emerald-50 max-w-4xl mx-auto leading-relaxed"
+                        >
+                            AI can be a powerful tool in helping you manage and
+                            pay down your technical debt, but it can also cause
+                            your tech debt balance to explode. Unleashing AI on
+                            a legacy application without preparation and
+                            constraints can be a recipe for disaster.
+                        </p>
+
+                        <div class="mt-10">
+                            <a
+                                href="https://clients.artisan.build/register/phpscore"
+                                class="inline-flex items-center justify-center rounded-xl bg-emerald-500 px-8 py-4 text-lg font-semibold text-emerald-100 shadow-lg hover:bg-emerald-300 hover:shadow-xl transition-all duration-200"
+                            >
+                                Check Your AI Readiness
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- CIERRO GRID BACKGROUND -->
+                <!-- NUEVA SECCION -->
+                <section
+                    id="ai-tools"
+                    class="relative overflow-hidden bg-emerald-600 dark:bg-emerald-700"
+                >
+                    <!-- Decorative background elements -->
+                    <div class="absolute inset-0">
+                        <div
+                            class="absolute -top-24 -left-24 h-96 w-96 rounded-full bg-emerald-500/35 blur-3xl"
+                        >
+                        </div>
+                        <div
+                            class="absolute -bottom-24 -right-24 h-96 w-96 rounded-full bg-emerald-800/35 blur-3xl"
+                        >
+                        </div>
+                        <svg
+                            class="absolute inset-0 h-full w-full opacity-[0.1]"
+                            xmlns="http://www.w3.org/2000/svg"
+                            ><defs
+                                ><pattern
+                                    id="grid"
+                                    width="40"
+                                    height="40"
+                                    patternUnits="userSpaceOnUse"
+                                    ><path
+                                        d="M 40 0 L 0 0 0 40"
+                                        fill="none"
+                                        stroke="white"
+                                        stroke-width="0.6"></path></pattern
+                                ></defs
+                            ><rect width="100%" height="100%" fill="url(#grid)"
+                            ></rect></svg
+                        >
+                    </div>
+
+                    <div
+                        class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 text-center"
+                    >
+                        <p
+                            class="text-sm font-semibold uppercase tracking-widest text-emerald-200"
+                        >
+                            Is Your App AI Ready?
+                        </p>
+
+                        <h2
+                            class="mt-3 text-4xl/[48px] sm:text-5xl/[58px] lg:text-6xl/[68px] font-bold font-serif text-white drop-shadow-sm"
+                        >
+                            Don't Vibe Code Alone
+                        </h2>
+
+                        <p
+                            class="mt-6 text-lg sm:text-xl text-emerald-50 max-w-4xl mx-auto leading-relaxed"
+                        >
+                            AI can be a powerful tool in helping you manage and
+                            pay down your technical debt, but it can also cause
+                            your tech debt balance to explode. Unleashing AI on
+                            a legacy application without preparation and
+                            constraints can be a recipe for disaster.
+                        </p>
+
+                        <div
+                            class="mt-10 inline-flex items-center gap-3 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 px-6 py-4"
+                        >
+                            <svg
+                                class="shrink-0 [:where(&)]:size-6 h-12 w-12 text-emerald-200 shrink-0"
+                                data-flux-icon=""
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                                data-slot="icon"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
+                                ></path>
+                            </svg>
+
+                            <p
+                                class="text-emerald-50 text-sm sm:text-base text-left"
+                            >
+                                Your free score and report will show you the
+                                areas of concern that should be addressed before
+                                you start incorporating AI into your application
+                                development and maintenance workflows
+                            </p>
+                        </div>
+
+                        <div class="mt-10">
+                            <a
+                                href="https://clients.artisan.build/register/phpscore"
+                                class="inline-flex items-center justify-center rounded-xl bg-white px-8 py-4 text-lg font-semibold text-emerald-700 shadow-lg hover:bg-emerald-50 hover:shadow-xl transition-all duration-200"
+                            >
+                                Check Your AI Readiness
+                                <svg
+                                    class="ml-2 h-5 w-5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2.5"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- CIERRE NUEVA SECCIÓN -->
             </section>
         </main>
     </body>

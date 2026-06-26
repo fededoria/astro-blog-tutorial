@@ -9,7 +9,75 @@ const navLinks = [
 ];
 ---
 
-<header class="p-1 py-8 absolute z-10 w-full border-2">
+<div class="relative w-full z-50">
+    <header
+        class="px-6 py-5 flex items-center justify-between relative bg-white border-b border-stroke"
+    >
+        <!-- links navegacion -->
+        <div class="flex gap-10 self-stretch">
+            <a
+                href="/"
+                class="flex flex-col items-start justify-center -mx-2 px-2"
+                >HOME</a
+            >
+            <div class="hidden lg:flex items-center gap-4">
+                <a
+                    href="http://"
+                    class="flex items-center gap-1 px-3 py-2 text-base font-heading text-primary hover:opacity-85 transition-opacity whitespace-nowrap overflow-hidden text-ellipsis"
+                    >Zapatillas</a
+                >
+                <a
+                    href="http://"
+                    class="flex items-center gap-1 px-3 py-2 text-base font-heading text-primary hover:opacity-85 transition-opacity whitespace-nowrap overflow-hidden text-ellipsis"
+                    >Remeras</a
+                >
+                <a
+                    href="http://"
+                    class="flex items-center gap-1 px-3 py-2 text-base font-heading text-primary hover:opacity-85 transition-opacity whitespace-nowrap overflow-hidden text-ellipsis"
+                    >Buzos</a
+                >
+                <div class="relative felx items-center">
+                    <button
+                        type="button"
+                        class="flex items-center px-3 py-2 text-base font-heading text-primary hover:opacity-70 transition-opacity whitespace-nowrap overflow-hidden text-ellipsis"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        <span
+                            class="flex items-center gap-1 leading-normal overflow-hidden"
+                        >
+                            <span class="overflow-hidden text-ellipsis"
+                                >Resources</span
+                            >
+                            <span class="vpi-chevron-down text-sm shrink-0"
+                                >↓</span
+                            >
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- links social -->
+        <div class="flex items-center gap-2 lg:gap-4">
+            <div class="hidden lg:flex items-center">a</div>
+            <div class="hidden lg:flex xl:hidden items-center gap-4">b</div>
+            <div class="hidden xl:flex items-center gap-4">c</div>
+            <button
+                aria-label="Search"
+                class="lg:hidden p-2 text-primary hover:opacity-70 transition-opacity cursor-pointer"
+                type="button">→</button
+            >
+            <button
+                type="button"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+                aria-label="Toggle navigation menu"
+                class="lg:hidden p-2 -md-2 text-primary hover:opacity-70 transition-opacity cursor-pointer"
+                >→</button
+            >
+        </div>
+    </header>
+    <!-- OTRA FORMA DE MENU -->
     <nav class="flex justify-between items-center m-0 mw-[1440px]">
         <a href="/">{headerLogo}</a>
         <ul
@@ -30,4 +98,4 @@ const navLinks = [
         </ul>
         <div class="hidden max-[1440px]:block">🟰</div>
     </nav>
-</header>
+</div>
