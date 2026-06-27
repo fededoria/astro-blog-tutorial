@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+import Paginas from "../components/Paginas.astro";
 const str = "Bob";
 const num = 1;
 const obj = {
@@ -36,11 +38,54 @@ const data = await res.json();
 		</ul>
 		<h2>Datos traidos de una API con <i>fetch</i></h2>
 		<ul>
-			{data.map((item) => <li>{item.title}</li>)}
+			{data.map((item: any) => <li>{item.title}</li>)}
 		</ul>
-		<div>
-			<a href="/nike-landing">Nike landing page</a>
-			<a href="/elephc-kimi26" target="_blank">Eleph by Kimi 2.6</a>
+		<div class="py-4">
+			<Paginas />
 		</div>
+		<section class="py-6 bg-emerald-950 w-full h-64">
+			<div
+				class="overflow-hidden relative py-8 px-16 lg:px-64 flex flex-col items-center justify-center space-y-12 bg-neutral-950"
+			>
+				<!-- GRADIENTES FLOTANTES -->
+				<div
+					class="absolute top-0 -left-2 w-32 h-32 bg-emerald-500/70 blur-3xl rounded-b-full"
+				>
+				</div>
+				<div
+					class="absolute bottom-0 -right-16 w-32 h-32 bg-amber-300/50 blur-3xl rounded-b-full"
+				>
+				</div>
+				<h2 class="text-5xl text-neutral-50 font-black">
+					Súper Título H2
+				</h2>
+				<div
+					class="mx-8 mb-6 bg-neutral-900 border border-neutral-600/50 text-neutral-50 rounded-lg space-y-6"
+				>
+					<div class="py-4 px-4 border-b border-neutral-600/50">
+						<h3 class="text-2xl font-bold tracking-wider uppercase">
+							Subtítulo tabla
+						</h3>
+					</div>
+					<div class="py-4 px-4">
+						<p class="text-neutral-400 pb-4">
+							Lorem ipsum dolor sit, amet consectetur adipisicing
+							elit. Officia dolorem voluptatum, illo placeat
+							dolores corrupti minima ipsam veritatis hic qui
+							ipsum incidunt quo eos nobis architecto enim
+							asperiores exercitationem eius.
+						</p>
+						<button
+							class="font-mono text-emerald-300 text-sm my-2 px-4 py-1 rounded-md bg-emerald-950 border border-emerald-600/50 shadow-emerald-600 shadow-2xl"
+							type="button"
+							>status: <span
+								class="uppercase text-emerald-100 font-semibold tracking-widest"
+								>active</span
+							></button
+						>
+					</div>
+				</div>
+			</div>
+		</section>
 	</body>
 </html>

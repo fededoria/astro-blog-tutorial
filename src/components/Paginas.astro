@@ -1,0 +1,24 @@
+---
+const paginas = [
+    { name: "nike-landing", url: "/nike-landing" },
+    { name: "Estilo Laracon.Net", url: "/laraconnet" },
+];
+---
+
+<ul>
+    {
+        paginas.map((i: any) => {
+            return (
+                <li>
+                    <a
+                        class="font-medium italic underline hover:opacity-80"
+                        href={i.url}
+                    >
+                        {i.name}
+                    </a>
+                </li>
+            );
+        })
+    }
+</ul>
+<!-- NOTAR QUE ESTAMOS USANDO RETURN CON PARÉNTESIS SI NO EL MAP NO FUNCIONARÍA SI USÁRAMOS LLAVES -->
