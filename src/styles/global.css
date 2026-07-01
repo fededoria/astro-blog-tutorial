@@ -1,11 +1,20 @@
 @import "tailwindcss";
-
+/* 
+En Tailwind V4 ya no está disponible
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+Ahora directamente se pone @import "tailwindcss"
+
+Si querés que haga un reset (elimine todos los estilos base) se usa @import "tailwindcss/preflight"
+*/
+
+
 @theme {
     --color-electric-moss: #b0d80a;
+    --color-laravel: #ff2d20;
+    --color-ember: #ff6b3d;
 }
 
 @layer components {
@@ -41,4 +50,12 @@ a[target="_blank"]::after {
     content: "\2197";
     margin-left: 0.5em;
     font-variant-emoji: text;
+}
+
+.accent {
+    background: linear-gradient(135deg, var(--laravel), orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }

@@ -1,5 +1,208 @@
 ---
-// Acá irá luego un layout quizás!
+import "../styles/global.css";
 ---
 
-<h1>Laracon.net</h1>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body class="bg-neutral-950 text-white">
+        <header class="hero pt-24 pb-20 relative text-center">
+            <div class="container w-245 my-0 mx-auto py-0 px-6 relative z-2">
+                <div
+                    class="eyebrow font-mono text-sm text-laravel tracking-[0.15] uppercase mb-6"
+                >
+                    // roll the highlight reel
+                </div>
+                <h1
+                    class="text-[clamp(2.5rem,7vw,5rem)] font-extrabold tracking-tighter leading-none mb-7"
+                >
+                    We had a
+                    <span
+                        class="bg-linear-to-tr from-laravel to-ember bg-clip-text text-transparent"
+                        >blast</span
+                    >
+                </h1>
+                <p
+                    class="tagline text-[clamp(1.05rem, 2vw, 1.25rem)] text-gray-200 w-155 mt-0 mb-10 mx-auto animate-[fadeUp 0.8s 0.4s forwards]"
+                >
+                    Years of brand-new talks. lightning rounds, pre-parties, and
+                    cherries flying through chat - all streamed free to a
+                    community showing up from every timezone. Honestly? It was a
+                    whole lot of fun.
+                </p>
+                <div
+                    class="status-card inline-flex items-center gap-3 py-3 px-5 border border-white/5
+                     bg-neutral-900 rounded-full font-mono text-sm text-gray-600"
+                >
+                    <span
+                        class="w-2 h-2 rounded-full bg-amber-400 shadow-[0_0_10px_amber-400] animate-pulse-custom"
+                    ></span>
+                    <span class="font-mono text-sm text-gray-200"
+                        >status: standby - we'll keep you posted</span
+                    >
+                </div>
+            </div>
+        </header>
+        <section id="legacy" class="relative py-20 px-0">
+            <div class="container w-245 my-0 mx-auto py-0 px-6 relative z-2">
+                <div
+                    class="section-label font-mono text-sm text-laravel tracking-wider*2 uppercase mb-4"
+                >
+                    // the run
+                </div>
+                <h2
+                    class="text-[2.5rem] font-bold tracking-tighter leading-[1.15] mb-6"
+                >
+                    <!-- text-[clamp(1.75rem, 4vw, 2.5rem)] -->
+                    The biggest party the <br />
+                    Laravel community ever threw
+                </h2>
+                <p class="text-neutral-400 text-[1.05rem] mb-4">
+                    Laracon Online streamed
+                    <strong>free to everyone</strong>
+                    , anywhere in the world. Brand-new talks. Keynotes from Taylor
+                    Otwell. Lightning sessions that doubled as group therapy for developers
+                    everywhere. And a cht that moved so fast you could only catch
+                    half of it.
+                </p>
+                <p class="text-neutral-400 text-[1.05rem] mb-4">
+                    It was a Tuesday afternoon spent with thousands of people
+                    who care about the same craft you do — and somehow, every
+                    single time, it ruled.
+                </p>
+                <div
+                    class="code-block bg-neutral-900 border border-neutral-500 rounded-xl py-6 px-7 font-mono text-sm leading-7 my-8 mx-0 overflow-auto relative"
+                >
+                    <div class="code-content mt-5">
+                        <span class="com text-gray-600"
+                            >// laracon.online - rolling credits</span
+                        >
+                        <span class="kw text-laravel">foreach</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="memories" class="py-20 px-0 relative">
+            <div
+                id="container1"
+                class="w-245 my-0 mx-auto py-0 px-6 relative z-2"
+            >
+                <div
+                    class="section-label font-mono text-sm text-laravel tracking-[0.2em] uppercase mb-4"
+                >
+                    // highlights
+                </div>
+                <h2
+                    class="text-[2.5rem] font-bold tracking-tighter leading-[1.15] mb-6"
+                >
+                    What made it ours.
+                </h2>
+                <div
+                    id="memory-grid"
+                    class="grid auto-cols-[minmax(240px, 1fr)] gap-4 mt-8"
+                >
+                    <!-- MEMORY CARDS -->
+                    <div
+                        class="memory-card p-6 bg-neutral-950 border border-gray-300 rounded-xl"
+                    >
+                        <span class="text-lg mb-3 block">🎤</span>
+                        <h3>The Talks</h3>
+                        <p class="text-[0.9rem] m-0 text-gray-400">
+                            Brand-new, never-before-seen content delivered live
+                            by the people building the framework.
+                        </p>
+                    </div>
+                    <div
+                        class="memory-card p-6 bg-neutral-950 border border-gray-300 rounded-xl"
+                    >
+                        <span class="text-lg mb-3 block">⚡</span>
+                        <h3>Lightning Rounds</h3>
+                        <p class="text-[0.9rem] m-0 text-gray-400">
+                            Fifteen-minute bursts of inspiration - from Carbon
+                            deep-dives to git rebase wizardry.
+                        </p>
+                    </div>
+                    <div
+                        class="memory-card p-6 bg-neutral-950 border border-gray-300 rounded-xl"
+                    >
+                        <span class="text-lg mb-3 block">📺</span>
+                        <h3>Free for All</h3>
+                        <p class="text-[0.9rem] m-0 text-gray-400">
+                            Streamed on YouTube, no paywall, no gatekeeping =
+                            the entire community welcome.
+                        </p>
+                    </div>
+                    <div
+                        class="memory-card p-6 bg-neutral-950 border border-gray-300 rounded-xl"
+                    >
+                        <span class="text-lg mb-3 block">🎉</span>
+                        <h3>Pre-Parties</h3>
+                        <p class="text-[0.9rem] m-0 text-gray-400">
+                            Warm-ups eith Freek and Christoph that felt like
+                            calling a friend the night before.
+                        </p>
+                    </div>
+                    <div
+                        class="memory-card p-6 bg-neutral-950 border border-gray-300 rounded-xl"
+                    >
+                        <span class="text-lg mb-3 block">🌎</span>
+                        <h3>Mingle Meetups</h3>
+                        <p class="text-[0.9rem] m-0 text-gray-400">
+                            Viewing parties from Berlin to Brisbane - the
+                            conference was wherever you were.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="return" class="py-20 px-0 relative">
+            <div class="container w-245 my-0 mx-auto py-0 px-6 relative z-2">
+                <div
+                    class="font-mono text-sm text-laravel tracking-[0.2em] uppercase mb-4"
+                >
+                    // What's next
+                </div>
+                <h2
+                    class="text-[2.5rem] font-bold tracking-tight leading-8 mb-6"
+                >
+                    Could it come back?
+                    <br />
+                    Honestly... maybe.
+                </h2>
+                <p class="text-gray-300 text-lg mb-4">
+                    The Laravel community has always had a knack for second
+                    acts. We're keeping this domain right where it is — because
+                    you never know. If the stars align and the calendar clears,
+                    don't be shocked if the lights flicker back on.
+                </p>
+            </div>
+        </section>
+        <footer class="py-14 px-10 border border-neutral-400 mt-15">
+            <div
+                class="container w-245 my-0 mx-auto py-0 px-6 relative z-2 flex flex-col justify-center items-center"
+            >
+                <p class="font-mono text-sm text-gray-700 mb-2">
+                    <span class="text-laravel">$</span> echo "thanks for an unreal
+                    run."
+                </p>
+                <p class="font-mono text-sm text-gray-700 mb-2">
+                    Catch up on every talk at the <a
+                        class="text-gray-300 border border-b-0 border-gray-600"
+                        href="http://www.youtube.com/c/laracononline"
+                        target="_blank"
+                        rel="noopener">Laracon Online YouTube channel</a
+                    >.
+                </p>
+                <p
+                    class="signature mt-8 italic text-gray-300 font-sans text-sm"
+                >
+                    Made with love by Ian, Eric, and Taylor 🍒
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
